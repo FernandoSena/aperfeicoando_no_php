@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: fernando
+ * Date: 15/04/2021
+ * Time: 11:28
+ */
+
+namespace Source\App;
+
+
+class User
+{
+    private $firstName;
+    private $lastName;
+
+    /**
+     * User constructor.
+     * @param $firstName
+     * @param $lastName
+     */
+    public function __construct($firstName, $lastName)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+}
